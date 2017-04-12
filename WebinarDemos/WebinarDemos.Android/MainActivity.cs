@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms.Platform.Android.AppLinks;
 
 namespace WebinarDemos.Droid
 {
@@ -20,6 +21,7 @@ namespace WebinarDemos.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
+			AndroidAppLinks.Init (this);
 			LoadApplication (new WebinarDemos.App ());
 		}
 	}

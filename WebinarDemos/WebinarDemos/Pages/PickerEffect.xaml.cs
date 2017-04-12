@@ -9,13 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace WebinarDemos.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PickerEffect : ContentPage
 	{
 		public PickerEffect ()
 		{
 			InitializeComponent ();
             BindingContext = new DemoViewModel();
+			Title = "Picker with Platform Effect";
         }
 	}
 }

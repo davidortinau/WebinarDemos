@@ -17,6 +17,8 @@ namespace WebinarDemos.Pages
 			InitializeComponent ();
 
             BindingContext = new DemoViewModel();
+
+			Title = "Picker";
 		}
 	}
 }

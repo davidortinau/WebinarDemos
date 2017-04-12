@@ -10,6 +10,7 @@ namespace WebinarDemos
 		public CompoundAnimationPage()
 		{
 			InitializeComponent();
+			Title = "Compound Animations";
 		}
 
 		private void Handle_Clicked(object sender, System.EventArgs e)

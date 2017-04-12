@@ -10,8 +10,10 @@ namespace WebinarDemos
 		public AnimationExtensionsPage()
 		{
 			InitializeComponent();
+			Title = "Animations by View Extensions";
 		}
 
+		// Blocking for sequence
 		//async void Handle_Clicked(object sender, System.EventArgs e)
 		//{
 		//	await Xamagon.FadeTo(0);
@@ -20,6 +22,7 @@ namespace WebinarDemos
 		//	await LoginButton.LayoutTo(new Rectangle(this.Width / 2, LoginButton.Y, 0, LoginButton.Height));
 		//}
 
+		// Parallel animations
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			Xamagon.FadeTo(0);
