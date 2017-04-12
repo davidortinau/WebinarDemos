@@ -23,6 +23,7 @@ namespace WebinarDemos.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
+			FormsCommunityToolkit.Effects.iOS.Effects.Init();
 			LoadApplication (new WebinarDemos.App ());
 
 			return base.FinishedLaunching (app, options);

@@ -25,6 +25,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DemoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoutingEffects\PickerColorEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -47,5 +48,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)RoutingEffects\" />
   </ItemGroup>
 </Project>
