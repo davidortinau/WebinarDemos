@@ -38,8 +38,8 @@ namespace WebinarDemos
 			                                    easing: Easing.Linear);
 
 			//var buttonWidthOut = new Animation(callback: d => LoginButton.WidthRequest = d,
-			//                                   start: this.Width,
-			//									end: LoginButton.Height,
+			//                                   start: 400,
+			//									end: 40,
 			//									easing: Easing.Linear);
 
 			var buttonOut = new Animation(callback: d => LoginButton.Scale = d,

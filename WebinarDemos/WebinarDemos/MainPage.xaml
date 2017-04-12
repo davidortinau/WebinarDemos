@@ -47,9 +47,10 @@
             />
 
             <Button
-            Text="Custom Renderer"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
+	            Text="Picker - Custom Renderer"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="PickerCustom_Clicked"
             />
 
 			<Label Text="Animation" 

@@ -25,6 +25,11 @@ namespace WebinarDemos
             await Navigation.PushAsync(new PickerEffect());
         }
 
+		private async void PickerCustom_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new PickerCustom());   
+       }
+
 		private async void AnimationViewExtensions_Clicked(object sender, System.EventArgs e)
 		{
 			await Navigation.PushAsync(new AnimationExtensionsPage());

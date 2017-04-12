@@ -97,6 +97,7 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
     <Compile Include="Effects\PickerColorEffect.cs" />
+    <Compile Include="Renderers\PickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -143,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Effects\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <Import Project="..\WebinarDemos\WebinarDemos.projitems" Label="Shared" Condition="Exists('..\WebinarDemos\WebinarDemos.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
