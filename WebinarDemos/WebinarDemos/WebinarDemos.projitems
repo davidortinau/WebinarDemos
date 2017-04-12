@@ -26,6 +26,12 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DemoViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RoutingEffects\PickerColorEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AnimationExtensionsPage.xaml.cs">
+      <DependentUpon>AnimationExtensionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CompoundAnimationPage.xaml.cs">
+      <DependentUpon>CompoundAnimationPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -34,6 +40,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\AnimationExtensionsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\CompoundAnimationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

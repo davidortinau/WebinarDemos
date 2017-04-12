@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebinarDemos.CompoundAnimationPage">
+	<ContentPage.Content>
+		<AbsoluteLayout>
+			<Image 
+				x:Name="Xamagon" 
+				Source="Xamagon.png" 
+				AbsoluteLayout.LayoutBounds=".5,0,300,300"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+			<Entry 
+				x:Name="Username" 
+				Placeholder="Username" 
+				AbsoluteLayout.LayoutBounds=".5,300,0.9,40"
+                AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+			/>
+			<Entry 
+				x:Name="Password" 
+				Placeholder="Password" 
+				IsPassword="true" 
+				AbsoluteLayout.LayoutBounds=".5,360,0.9,40"
+                AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" />
+			<Button 
+				x:Name="LoginButton" 
+				BackgroundColor="Silver" 
+				BorderRadius="0" 
+				Text="Let Me In" 
+				AbsoluteLayout.LayoutBounds=".5,420,0.9,40"
+                AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+				Clicked="Handle_Clicked" />
+		</AbsoluteLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

@@ -24,5 +24,15 @@ namespace WebinarDemos
         {
             await Navigation.PushAsync(new PickerEffect());
         }
+
+		private async void AnimationViewExtensions_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new AnimationExtensionsPage());
+		}
+
+		private async void CompoundAnimations_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new CompoundAnimationPage());
+		}
     }
 }
