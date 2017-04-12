@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WebinarDemos"
+             x:Class="WebinarDemos.MainPage">
+
+    <ScrollView>
+
+        <StackLayout
+        Padding="20"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="Fill">
+            <Label Text="XAML" 
+               FontSize="Large"
+           VerticalOptions="Center" 
+           HorizontalOptions="Start" />
+
+            <Button
+            Text="XAML ContentPage"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            />
+
+            <Button
+            Text="CS Page"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            />
+
+            <Label Text="Progressive Enhancement" 
+               FontSize="Large"
+           VerticalOptions="Center" 
+           HorizontalOptions="Start" />
+
+            <Button
+                Text="Picker - Standard"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Clicked="PickerStandard_Clicked"
+            />
+
+            <Button
+            Text="Picker - Platform Effect"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+                Clicked="PickerEffect_Clicked"
+            />
+
+            <Button
+            Text="Custom Renderer"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            />
+
+            <Label Text="Layout Performance" 
+               FontSize="Large"
+           VerticalOptions="Center" 
+           HorizontalOptions="Start" />
+
+            <Button
+            Text="Standard Layout"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            />
+
+            <Button
+            Text="Optimized Layout"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
