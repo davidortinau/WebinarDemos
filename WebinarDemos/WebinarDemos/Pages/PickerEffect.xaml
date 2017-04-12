@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ValueConverters="clr-namespace:WebinarDemos.Converters"
+			 xmlns:fct_effects="clr-namespace:FormsCommunityToolkit.Effects;assembly=FormsCommunityToolkit.Effects"
 			 xmlns:effects="clr-namespace:WebinarDemos.RoutingEffects"
              x:Class="WebinarDemos.Pages.PickerEffect">
     <ContentPage.Resources>
@@ -9,13 +10,22 @@
             <ValueConverters:StringToColorConverter x:Key="StringToColorConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-
+    <!--
     <Picker
         x:Name="picker"
-        effects:PickerColorEffect.Color="{Binding SelectedColor, Converter={StaticResource StringToColorConverter}}"
+		effects:PickerColorEffect.Color="{Binding SelectedColor, Converter={StaticResource StringToColorConverter}}"
+		SelectedItem="{Binding SelectedColor}"
         Title="Choose a Color"
         ItemsSource="{Binding Colors}"
-        SelectedItem="{Binding SelectedColor}"
+        HorizontalOptions="Fill"
+        VerticalOptions="Center"
+        >
+	-->
+    <Picker
+        x:Name="picker"
+		fct_effects:ChangePickerColorEffect.Color="Red"
+        Title="Choose a Color"
+        ItemsSource="{Binding Colors}"
         HorizontalOptions="Fill"
         VerticalOptions="Center"
         >

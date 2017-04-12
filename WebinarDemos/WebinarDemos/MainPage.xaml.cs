@@ -15,6 +15,16 @@ namespace WebinarDemos
 			InitializeComponent();
 		}
 
+		private async void XamlPage_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new XamlPage());
+		}
+
+		private async void CsPage_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new CsPage());
+		}
+
         private async void PickerStandard_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PickerStandard());
@@ -38,6 +48,16 @@ namespace WebinarDemos
 		private async void CompoundAnimations_Clicked(object sender, System.EventArgs e)
 		{
 			await Navigation.PushAsync(new CompoundAnimationPage());
+		}
+
+		private async void LayoutWasteful_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new LayoutWasteful());
+		}
+
+		private async void LayoutOptimized_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new LayoutOptimized());
 		}
     }
 }

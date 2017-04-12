@@ -11,6 +11,8 @@ namespace WebinarDemos
 		{
 			InitializeComponent();
 			BindingContext = new DemoViewModel();
+
+			Title = "Picker - Custom Renderer";
 		}
 	}
 }

@@ -7,70 +7,65 @@
     <ScrollView>
 
         <StackLayout
-        Padding="20"
-        VerticalOptions="FillAndExpand"
-        HorizontalOptions="Fill">
+        	Padding="20"
+        	VerticalOptions="FillAndExpand"
+        	HorizontalOptions="Fill">
             <Label Text="XAML" 
                FontSize="Large"
-           VerticalOptions="Center" 
-           HorizontalOptions="Start" />
+	           VerticalOptions="Center" 
+	           HorizontalOptions="Start" />
 
             <Button
-            Text="XAML ContentPage"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
-            />
+	            Text="XAML ContentPage"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="XamlPage_Clicked"/>
 
             <Button
-            Text="CS Page"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
-            />
+	            Text="CS Page"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+	            Clicked="CsPage_Clicked"/>
 
             <Label Text="Progressive Enhancement" 
-               FontSize="Large"
-           VerticalOptions="Center" 
-           HorizontalOptions="Start" />
+				FontSize="Large"
+				VerticalOptions="Center" 
+				HorizontalOptions="Start" />
 
             <Button
                 Text="Picker - Standard"
                 VerticalOptions="Center"
                 HorizontalOptions="FillAndExpand"
-                Clicked="PickerStandard_Clicked"
-            />
+                Clicked="PickerStandard_Clicked" />
 
             <Button
-            Text="Picker - Platform Effect"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
-                Clicked="PickerEffect_Clicked"
-            />
+	            Text="Picker - Platform Effect"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+                Clicked="PickerEffect_Clicked"/>
 
             <Button
 	            Text="Picker - Custom Renderer"
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
-				Clicked="PickerCustom_Clicked"
-            />
+				Clicked="PickerCustom_Clicked"/>
 
 			<Label Text="Animation" 
                FontSize="Large"
-           VerticalOptions="Center" 
-           HorizontalOptions="Start" />
+	           VerticalOptions="Center" 
+	           HorizontalOptions="Start" />
 
             <Button
 	            Text="View Extensions"
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
-				Clicked="AnimationViewExtensions_Clicked"
-            />
+				Clicked="AnimationViewExtensions_Clicked"/>
 
 			<Button
 	            Text="Compound Animations"
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
-				Clicked="CompoundAnimations_Clicked"
-            />
+				Clicked="CompoundAnimations_Clicked"/>
 
             <Label Text="Layout Performance" 
                FontSize="Large"
@@ -78,16 +73,16 @@
 	           HorizontalOptions="Start" />
 
             <Button
-            Text="Standard Layout"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
-            />
+	            Text="Wasteful Layout"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="LayoutWasteful_Clicked"/>
 
             <Button
-            Text="Optimized Layout"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand"
-            />
+	            Text="Optimized Layout"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="LayoutOptimized_Clicked"/>
         </StackLayout>
     </ScrollView>
 
