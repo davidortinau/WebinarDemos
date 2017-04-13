@@ -44,6 +44,12 @@
 	            HorizontalOptions="FillAndExpand"
                 Clicked="PickerEffect_Clicked"/>
 
+			<Button
+	            Text="Picker - Platform Effect Binding"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+                Clicked="PickerEffect2_Clicked"/>
+
             <Button
 	            Text="Picker - Custom Renderer"
 	            VerticalOptions="Center"
@@ -83,6 +89,7 @@
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
 				Clicked="LayoutOptimized_Clicked"/>
+
         </StackLayout>
     </ScrollView>
 

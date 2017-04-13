@@ -11,6 +11,9 @@ namespace WebinarDemos.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+			if (value == null)
+				return Color.Default;
+			
             string valueAsString = value.ToString();
             Debug.WriteLine(valueAsString);
             switch (valueAsString)

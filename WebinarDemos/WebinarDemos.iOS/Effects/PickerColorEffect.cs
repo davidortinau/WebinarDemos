@@ -14,6 +14,7 @@ namespace WebinarDemos.Effects.iOS
 
 		protected override void OnAttached()
 		{
+			System.Diagnostics.Debug.WriteLine("attached");
 		}
 
 		protected override void OnElementPropertyChanged(System.ComponentModel.PropertyChangedEventArgs args)

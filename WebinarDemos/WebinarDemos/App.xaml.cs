@@ -34,6 +34,10 @@ namespace WebinarDemos
 			Application.Current.AppLinks.RegisterLink(MakeAppLink("Picker with Renderer", "Demonstrates customizing a Picker with a Custom Renderer", 2));
 			Application.Current.AppLinks.RegisterLink(MakeAppLink("Animation Extensions", "Demonstrates animating views with extension methods", 3));
 			Application.Current.AppLinks.RegisterLink(MakeAppLink("Compound Animations", "Demonstrates compound animations", 4));
+			Application.Current.AppLinks.RegisterLink(MakeAppLink("Layout Wasteful", "Demonstrates a wasteful Layout", 5));
+			Application.Current.AppLinks.RegisterLink(MakeAppLink("Layout Optimized", "Demonstrates an optimized Layout", 6));
+			Application.Current.AppLinks.RegisterLink(MakeAppLink("ListView", "Demonstrates a basic ListView", 7));
+			Application.Current.AppLinks.RegisterLink(MakeAppLink("ListView Optimized", "Demonstrates an optimized ListView", 8));
 		}
 
 		protected override void OnSleep ()
@@ -68,13 +72,25 @@ namespace WebinarDemos
 					await MainPage.Navigation.PushAsync(new PickerEffect());
 					break;
 				case 2:
-					//await MainPage.Navigation.PushAsync(new PickerCustom());
+					await MainPage.Navigation.PushAsync(new PickerCustom());
 					break;
 				case 3:
 					await MainPage.Navigation.PushAsync(new AnimationExtensionsPage());
 					break;
 				case 4:
 					await MainPage.Navigation.PushAsync(new CompoundAnimationPage());
+					break;
+				case 5:
+					await MainPage.Navigation.PushAsync(new LayoutWasteful());
+					break;
+				case 6:
+					await MainPage.Navigation.PushAsync(new LayoutOptimized());
+					break;
+				case 7:
+					await MainPage.Navigation.PushAsync(new ListViewPage());
+					break;
+				case 8:
+					await MainPage.Navigation.PushAsync(new ListViewOptimizedPage());
 					break;
 			}
 

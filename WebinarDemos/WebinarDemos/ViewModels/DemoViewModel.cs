@@ -17,7 +17,8 @@ namespace WebinarDemos.ViewModels
             _colors = new List<string>();
             foreach (var field in typeof(Xamarin.Forms.Color).GetFields(BindingFlags.Static | BindingFlags.Public))
             {
-                _colors.Add(field.Name);
+				if(field != null && !String.IsNullOrEmpty(field.Name))
+                	_colors.Add(field.Name);
             }
 
         }
@@ -35,18 +36,25 @@ namespace WebinarDemos.ViewModels
                 OnPropertyChanged("Text");
             }
         }
-
-        public List<string> Colors { get => _colors; }
-        public string SelectedColor { get => _selectedColor;
+		        
+		private string _selectedColor = "Red";
+		public string SelectedColor { 
+			get { 
+				return _selectedColor; 
+			}
             set {
-                _selectedColor = value;
-                OnPropertyChanged(nameof(SelectedColor));
+				if (!string.IsNullOrEmpty(value) && _selectedColor != value)
+				{
+					_selectedColor = value;
+					OnPropertyChanged(nameof(SelectedColor));
+				}
             }
         }
 
         List<string> _colors;
+		public List<string> Colors { get { return _colors; } }
 
-        private string _selectedColor = "Red";
+        
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

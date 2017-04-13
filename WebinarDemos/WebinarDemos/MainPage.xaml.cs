@@ -10,6 +10,11 @@ namespace WebinarDemos
 {
 	public partial class MainPage : ContentPage
 	{
+		void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
 		public MainPage()
 		{
 			InitializeComponent();
@@ -35,6 +40,11 @@ namespace WebinarDemos
             await Navigation.PushAsync(new PickerEffect());
         }
 
+		private async void PickerEffect2_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new PickerEffectBinding());
+		}
+
 		private async void PickerCustom_Clicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new PickerCustom());   
@@ -58,6 +68,11 @@ namespace WebinarDemos
 		private async void LayoutOptimized_Clicked(object sender, System.EventArgs e)
 		{
 			await Navigation.PushAsync(new LayoutOptimized());
+		}
+
+		void Special_Clicked(object sender, System.EventArgs e)
+		{
+			// do something
 		}
     }
 }
