@@ -7,7 +7,7 @@ using WebinarDemos.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace WebinarDemos
 {
 	public partial class App : Application
