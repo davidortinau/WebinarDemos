@@ -13,8 +13,8 @@
             <Label Text="XAML" 
                FontSize="Large"
 	           VerticalOptions="Center" 
-	           HorizontalOptions="Start" />
-
+	           HorizontalOptions="Start"/>
+			
             <Button
 	            Text="XAML ContentPage"
 	            VerticalOptions="Center"

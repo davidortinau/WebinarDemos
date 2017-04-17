@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebinarDemos.XamlPage">
-	<Label
-		Text="This is a Xaml Page!"
-		FontSize="48"
-		HorizontalOptions="Fill"
-		VerticalOptions="Center"
-		HorizontalTextAlignment="Center"
-	/>
+
+		<Label
+			x:Name="label"
+			Text="This is a Xaml Page! Tap to view source."
+			FontSize="48"
+			HorizontalOptions="Fill"
+			VerticalOptions="Center"
+			HorizontalTextAlignment="Center"
+		/>
 </ContentPage>
