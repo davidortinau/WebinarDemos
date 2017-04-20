@@ -5,21 +5,22 @@
 		<ListView.ItemTemplate>
 			<DataTemplate>
 					<ViewCell>
-					<StackLayout>
-						<StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
-							<Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" />
-							<StackLayout>
-							<Label Text="{Binding Name}"
-								TextColor="{Binding Name}"
-								   FontSize="18" />
-							<Label Text="{Binding Name}"
-								TextColor="Black"
-								   FontSize="10" />
+						<StackLayout>
+							<StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
+								<Image Source="{Binding ImageUrl}" 
+										WidthRequest="50" HeightRequest="50" />
+								<StackLayout>
+									<Label Text="{Binding Name}"
+										TextColor="{Binding Name}"
+										   FontSize="18" />
+									<Label Text="{Binding Name}"
+										TextColor="Black"
+										   FontSize="10" />
+								</StackLayout>
 							</StackLayout>
-						</StackLayout>
-						<StackLayout HorizontalOptions="End">
-							<Button Text="Go" />
-						</StackLayout>
+							<StackLayout HorizontalOptions="End" BackgroundColor="Blue">
+								<Button Text="Go" HeightRequest="50" WidthRequest="50" />
+							</StackLayout>
 						</StackLayout>
 					</ViewCell>
 				</DataTemplate>

@@ -1,5 +1,31 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebinarDemos.ListViewOptimizedPage">
-	<ContentPage.Content>
-	</ContentPage.Content>
+	<ListView
+		CachingStrategy="RecycleElement"
+		ItemsSource="{Binding ColorViewModels}">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+					<ViewCell>
+						<StackLayout>
+							<StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
+								<Image Source="{Binding ImageUrl}" 
+										WidthRequest="50" HeightRequest="50" />
+								<StackLayout>
+									<Label Text="{Binding Name}"
+										TextColor="{Binding Name}"
+										   FontSize="18" />
+									<Label Text="{Binding Name}"
+										TextColor="Black"
+										   FontSize="10" />
+								</StackLayout>
+							</StackLayout>
+							<StackLayout HorizontalOptions="End" BackgroundColor="Blue">
+								<Button Text="Go" HeightRequest="50" WidthRequest="50" />
+							</StackLayout>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+		</ListView.ItemTemplate>
+
+	</ListView>
 </ContentPage>
