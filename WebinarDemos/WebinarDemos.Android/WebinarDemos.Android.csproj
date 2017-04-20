@@ -84,6 +84,9 @@
     <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android.AppLinks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.AppLinks.2.3.5.233-pre1\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.AppLinks.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.GooglePlayServices.Basement">
       <HintPath>..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
     </Reference>
@@ -92,9 +95,6 @@
     </Reference>
     <Reference Include="Xamarin.GooglePlayServices.AppIndexing">
       <HintPath>..\..\packages\Xamarin.GooglePlayServices.AppIndexing.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.AppIndexing.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform.Android.AppLinks">
-      <HintPath>..\..\packages\Xamarin.Forms.AppLinks.2.3.4.224\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.AppLinks.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.5.233-pre1\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>

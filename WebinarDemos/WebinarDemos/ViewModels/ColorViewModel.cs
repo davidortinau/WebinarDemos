@@ -33,9 +33,8 @@ namespace WebinarDemos
 		{
 			get
 			{
-
 				var v = string.Format("http://placehold.it/50x50/{0}", getColorHex(_name));
-				System.Diagnostics.Debug.WriteLine(v);
+				//System.Diagnostics.Debug.WriteLine(v);
 				return v;
 			}
 		}

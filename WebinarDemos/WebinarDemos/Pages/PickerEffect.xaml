@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 x:Class="WebinarDemos.Pages.PickerEffect"
+             xmlns:peffects="clr-namespace:FormsCommunityToolkit.Effects;assembly=FormsCommunityToolkit.Effects"
 			 Padding="20">
 
     <Picker
+        peffects:ChangePickerColorEffect.Color="Red"
         Title="Choose a Color"
         ItemsSource="{Binding Colors}"
         HorizontalOptions="Fill"

@@ -16,6 +16,7 @@ Global
 		WebinarDemos\WebinarDemos\WebinarDemos.projitems*{2aa0e0a7-17a9-40f6-b764-1e33552ac191}*SharedItemsImports = 4
 		WebinarDemos\WebinarDemos\WebinarDemos.projitems*{a5af6152-f079-49ce-971f-91835f82104d}*SharedItemsImports = 13
 		WebinarDemos\WebinarDemos\WebinarDemos.projitems*{bbb413ee-3d20-4d70-af00-36b46a1ec819}*SharedItemsImports = 4
+		WebinarDemos\WebinarDemos\WebinarDemos.projitems*{d7d91d1d-0a5e-44a2-89f5-d5f68b571515}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
