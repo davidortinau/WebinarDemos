@@ -38,7 +38,13 @@
                 HorizontalOptions="FillAndExpand"
                 Clicked="PickerStandard_Clicked" />
 
-            <Button
+			<Button
+                Text="Picker - Platform Specific"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Clicked="PickerSpecific_Clicked" />
+
+			<Button
 	            Text="Picker - Platform Effect"
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
@@ -89,6 +95,23 @@
 	            VerticalOptions="Center"
 	            HorizontalOptions="FillAndExpand"
 				Clicked="LayoutOptimized_Clicked"/>
+
+			<Label Text="ListView Performance" 
+               FontSize="Large"
+	           VerticalOptions="Center" 
+	           HorizontalOptions="Start" />
+
+            <Button
+	            Text="Basic ListView"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="BasicListView_Clicked"/>
+
+            <Button
+	            Text="Optimized ListView"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+				Clicked="OptimizedListView_Clicked"/>
 
         </StackLayout>
     </ScrollView>

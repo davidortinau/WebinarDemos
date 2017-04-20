@@ -35,6 +35,11 @@ namespace WebinarDemos
             await Navigation.PushAsync(new PickerStandard());
         }
 
+		private async void PickerSpecific_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new PickerSpecific());
+		}
+
         private async void PickerEffect_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PickerEffect());
@@ -70,9 +75,15 @@ namespace WebinarDemos
 			await Navigation.PushAsync(new LayoutOptimized());
 		}
 
-		void Special_Clicked(object sender, System.EventArgs e)
+		private async void BasicListView_Clicked(object sender, System.EventArgs e)
 		{
-			// do something
+			await Navigation.PushAsync(new ListViewPage());
 		}
+
+		private async void OptimizedListView_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new ListViewOptimizedPage());
+		}
+
     }
 }

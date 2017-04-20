@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -54,7 +55,13 @@ namespace WebinarDemos.ViewModels
         List<string> _colors;
 		public List<string> Colors { get { return _colors; } }
 
-        
+		public List<ColorViewModel> ColorViewModels
+		{
+			get
+			{
+				return _colors.Select(x => new ColorViewModel { Name = x }).ToList<ColorViewModel>();
+			}
+		}
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

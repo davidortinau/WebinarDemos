@@ -58,6 +58,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ViewSourcePage.xaml.cs">
       <DependentUpon>ViewSourcePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PickerSpecific.xaml.cs">
+      <DependentUpon>PickerSpecific.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ColorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ColorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -98,6 +103,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ViewSourcePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\PickerSpecific.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\PickerStandard.xaml">
@@ -114,5 +122,6 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)RoutingEffects\" />
     <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
   </ItemGroup>
 </Project>

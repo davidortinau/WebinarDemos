@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebinarDemos.ListViewPage">
-	
+	<ListView
+		ItemsSource="{Binding ColorViewModels}">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+					<ViewCell>
+						<StackLayout Spacing="10" Orientation="Horizontal">
+							<Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" />
+								
+							<Label Text="{Binding Name}"
+								TextColor="{Binding Name}"
+								   FontSize="30" />
+							
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+		</ListView.ItemTemplate>
+
+	</ListView>
 </ContentPage>
