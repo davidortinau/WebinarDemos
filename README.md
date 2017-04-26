@@ -1,1 +1,5 @@
-"# WebinarDemos"  git init git add README.md git commit -m "first commit" git remote add origin git@github.com:davidortinau/WebinarDemos.git git push -u origin master
+# Xamarin Webinar Demo Code
+
+View the [recording on Channel 9](http://aka.ms/video-xamarin.forms-webinar)
+View the [presentation slides](http://aka.ms/deck-xamarin.forms-webinar) 
+
