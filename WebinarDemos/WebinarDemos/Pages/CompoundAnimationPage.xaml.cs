@@ -37,11 +37,6 @@ namespace WebinarDemos
 												end: LoginButton.Height/2,
 			                                    easing: Easing.Linear);
 
-			//var buttonWidthOut = new Animation(callback: d => LoginButton.WidthRequest = d,
-			//                                   start: 400,
-			//									end: 40,
-			//									easing: Easing.Linear);
-
 			var buttonOut = new Animation(callback: d => LoginButton.Scale = d,
 										  start: 1,
 										  end: 0,
@@ -53,7 +48,6 @@ namespace WebinarDemos
 		    storyboard.Add (0.1, 0.5, usernameOut);
 		    storyboard.Add (0.2, 0.6, passwordOut);
 			storyboard.Add (0.5, 0.7, buttonRadiusOut);
-			//storyboard.Add (0.3, 0.5, buttonWidthOut);
 			storyboard.Add (0.7, 1, buttonOut);
 
 			storyboard.Commit (LoginButton, "out", length: 2000);

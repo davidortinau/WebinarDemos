@@ -7,24 +7,40 @@
 		<ListView.ItemTemplate>
 			<DataTemplate>
 					<ViewCell>
-						<StackLayout>
-							<StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
-								<Image Source="{Binding ImageUrl}" 
-										WidthRequest="50" HeightRequest="50" />
-								<StackLayout>
-									<Label Text="{Binding Name}"
-										TextColor="{Binding Name}"
-										   FontSize="18" />
-									<Label Text="{Binding Name}"
-										TextColor="Black"
-										   FontSize="10" />
-								</StackLayout>
-							</StackLayout>
-							<StackLayout HorizontalOptions="End" BackgroundColor="Blue">
-								<Button Text="Go" HeightRequest="50" WidthRequest="50" />
-							</StackLayout>
-						</StackLayout>
-					</ViewCell>
+                        <RelativeLayout>
+
+                            <BoxView 
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                BackgroundColor="{Binding Name}"/>
+
+                            <StackLayout
+                                RelativeLayout.XConstraint =
+                                  "{ConstraintExpression Type=RelativeToParent,
+                                                         Property=X,
+                                                         Factor=0,
+                                                         Constant=50}">
+                                <Label 
+                                    Text="{Binding Name}"
+								    TextColor="{Binding Name}"
+								    FontSize="18" />
+                                <Label 
+                                    Text="{Binding Name}"
+								    TextColor="Black"
+								    FontSize="10" />
+                            </StackLayout>
+
+                        <Button 
+                                RelativeLayout.XConstraint =
+                                    "{ConstraintExpression Type=RelativeToParent,
+                                                            Property=Width,
+                                                            Factor=1,
+                                                            Constant=-50}"
+                                Text="Go" 
+                                HeightRequest="50" 
+                                WidthRequest="50" />
+                    </RelativeLayout>
+                </ViewCell>
 				</DataTemplate>
 		</ListView.ItemTemplate>
 
